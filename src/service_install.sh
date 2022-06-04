@@ -57,5 +57,5 @@ elif [[ "$1" == "remove" && "`whoami`" == "root" ]]; then
     remove_service
     systemctl daemon-reload
 else
-    echo "Make sure you are root"
+    echo "Make sure you are root or use sudo."
 fi
