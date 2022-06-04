@@ -2,14 +2,13 @@
     Description=Simple hhullen service
 
 [Service]
-    Type=simple
+    Type=forking
     ExecStart=/usr/bin/java -jar /usr/bin/app.jar /var/log/hhullen-log.txt "Service is working!"
     Restart=on-failure
-    TimeoutStartSec=5
-    TimeoutStopSec=5
+    TimeoutStartSec=4
+    TimeoutStopSec=4
+    WatchdogSec=10
     KillMode=mixed
-    StartLimitIntervalSec=30
-    StartLimitBurst=5
 
 [Install]
     WantedBy=multiuser.target
