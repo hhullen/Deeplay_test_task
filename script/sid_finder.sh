@@ -37,7 +37,7 @@ print_manual() {
     echo '        - Number of bytes transferred in requested object'
     echo '        - User agent string sent by client (surrounded by double quotes). Can be used to identify what browser was used'
     echo 'IP ADDRESS:'
-    echo '    IP address, inside notation of log where "sid" need to be found'
+    echo '    IP address of notation of log where "sid" need to be found'
     echo
 }
 
